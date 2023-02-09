@@ -1,0 +1,17 @@
+<div class="card h-100">
+    <figure class="h-50 mb-5">
+        <img [src]="movie.image" class="card-img-top" alt="...">
+    </figure>
+    <div class="card-body">
+        <h5 class="card-title">{{movie.name}}</h5>
+        <p>Rate: {{movie.rate}}</p>
+        <p class="card-text">Description: {{movie.description}}</p>
+        <p>Price: {{movie.price | currency}}</p>
+        <p>Reviews: {{movie.reviews}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+
+    <div class="card-footer">
+        <small class="text-muted">Created at {{movie.createdAt | date:'short'}}</small>
+    </div>
+</div>
