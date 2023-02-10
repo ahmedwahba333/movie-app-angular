@@ -1,17 +1,18 @@
 <div class="card h-100">
-    <figure class="h-50 mb-5">
-        <img [src]="movie.image" class="card-img-top" alt="...">
+    <figure>
+        <img [src]="movie.poster_path" class="card-img-top" height="450px" alt="...">
     </figure>
-    <div class="card-body">
-        <h5 class="card-title">{{movie.name}}</h5>
-        <p>Rate: {{movie.rate}}</p>
-        <p class="card-text">Description: {{movie.description}}</p>
-        <p>Price: {{movie.price | currency}}</p>
-        <p>Reviews: {{movie.reviews}}</p>
+    <div class="card-body d-flex justify-content-between flex-column align-items-start">
+        <h5 class="card-title">original title: {{movie.original_title}}</h5>
+        <p>title: {{movie.title}}</p>
+        <p class="card-text">overview: {{movie.overview}}</p>
+        <p>popularity: {{movie.popularity}}</p>
+        <p>rate: {{movie.vote_average}}</p>
+        <p>vote count: {{movie.vote_count}}</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
 
     <div class="card-footer">
-        <small class="text-muted">Created at {{movie.createdAt | date:'short'}}</small>
+        <small class="text-muted">release date: {{movie.release_date}}</small>
     </div>
 </div>

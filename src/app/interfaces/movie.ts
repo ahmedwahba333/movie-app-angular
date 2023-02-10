@@ -1,11 +1,14 @@
 export interface Movie {
-    "createdAt": string,
-    "name": string,
-    "image": string,
-    "rate": number,
-    "count": number,
-    "description": string,
-    "price": number,
-    "reviews": Array<string>,
-    "id": number
-}
+    adult: boolean;
+    id: number;
+    original_language: string;
+    original_title: string;
+    overview: string;
+    popularity: number;
+    poster_path: string;
+    release_date: string;
+    title: string;
+    vote_average: number;
+    vote_count: number;
+  }
+  

@@ -8,15 +8,17 @@ import { Movie } from '../interfaces/movie';
 })
 export class MovieCardComponent {
   @Input() movie: Movie = {
-    "createdAt": "",
-    "name": '',
-    "image": '',
-    "rate": 0,
-    "count": 0,
-    "description": '',
-    "price": 0,
-    "reviews":[],
-    "id": 0
+    adult: true,
+    id: 0,
+    original_language: "",
+    original_title: "",
+    overview: "",
+    popularity: 0,
+    poster_path: "",
+    release_date: "",
+    title: "",
+    vote_average: 0,
+    vote_count: 0
   }
 
 
