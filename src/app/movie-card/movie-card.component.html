@@ -9,10 +9,10 @@
         <p>popularity: {{movie.popularity}}</p>
         <p>rate: {{movie.vote_average}}</p>
         <p>vote count: {{movie.vote_count}}</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a (click)="redirct()" class="btn btn-primary">Go somewhere</a>
     </div>
 
     <div class="card-footer">
-        <small class="text-muted">release date: {{movie.release_date}}</small>
+        <small class="text-muted">release date: {{movie.release_date | date: 'MMMM YYYY'}}</small>
     </div>
 </div>

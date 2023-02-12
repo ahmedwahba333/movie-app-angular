@@ -4,19 +4,26 @@ import { MovieListComponent } from "./movie-list/movie-list.component";
 import { AboutUsComponent } from "./about-us/about-us.component";
 import { AddMovieComponent } from "./add-movie/add-movie.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
-import {  } from "./movie-list/movie-list.component";
+import { MovieDetailsComponent } from "./movie-details/movie-details.component";
+import { AuthGuard } from './auth.guard';
+// import {  } from "./movie-list/movie-list.component";
 const routes: Routes = [
   {
     path:"home",
-    component: MovieListComponent,
+    component: MovieListComponent
 },
 {
   path:"About-Us",
   component:AboutUsComponent,
+  canActivate:[AuthGuard]
 },
 {
   path:"Add-Movie",
-  component:AddMovieComponent,
+  component:AddMovieComponent
+},
+{
+  path:"movie-details/:id",
+  component:MovieDetailsComponent
 },
 {
   path:"**",

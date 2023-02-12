@@ -11,6 +11,7 @@ import { AddMovieComponent } from './add-movie/add-movie.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ConverterPipe } from './pipes/converter.pipe';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AddMovieComponent,
     AboutUsComponent,
     ConverterPipe,
-    NotFoundComponent
+    NotFoundComponent,
+    MovieDetailsComponent
   ],
   imports: [
     BrowserModule,

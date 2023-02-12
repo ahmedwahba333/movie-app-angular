@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Movie } from '../interfaces/movie';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-movie-card',
@@ -21,5 +22,10 @@ export class MovieCardComponent {
     vote_count: 0
   }
 
+  constructor(private router:Router){}
+
+  redirct() {
+    this.router.navigate(['/movie-details',this.movie.id]);
+  }
 
 }
